@@ -1,0 +1,1169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Import Icons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+    <!-- Import Fonts -->
+    <link rel="shortcut icon" href="/icons/title_icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Gloria+Hallelujah&family=Karla:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Lily K</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="space/space.css">
+
+    <script src="https://kit.fontawesome.com/fa5a92aa23.js" crossorigin="anonymous"></script>
+    <script src="/space/space.js"></script>
+    <script>
+        /*to prevent Firefox FOUC, this must be here*/
+        let FF_FOUC_FIX;
+    </script>
+</head>
+
+<body>
+
+    <!-- ======== HEADER ======== -->
+    <header class="header">
+
+        <!--div class="container" id="myTopnav"-->
+        <a href="#" class="logo">L<span class="logo2"></i>ily</span> K<span class="logo2"></i>irichenko</span>
+        <nav class="navbar">
+            <a class="nav-menu-btn active" href="#home">Home</a>
+            <a class="nav-menu-btn" style="--i:0;" href="#about">About</a>
+            <a class="nav-menu-btn" style="--i:1;" href="#portfolio">Porfolio</a>
+            <a class="nav-menu-btn" style="--i:2;" href="#experience">Experience</a>
+            <a class="nav-menu-btn" style="--i:3;" href="#skills">Skills</a>
+            <!--<a class="nav-menu-btn" style="--i:4;" href="#blog">Blog</a>-->
+            <a class="nav-menu-btn" style="--i:5;" href="#contact">Contact</a>
+        </nav>
+
+        <div class="menuIcon">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+        </div>
+    </header>
+
+    <!-- ======== HOME SECTION ======== -->
+    <section class="home" id="home">
+        <div class="container">
+            <div class="container-home">
+                <div class="container-upper">
+                    <div class="container-left">
+                        <div class="home-content">
+                            <h2>Hi there!</h2>
+                            <div id="intro-text">I Am <span class="typing-text"> an Artist</span><br><!--and Game Developer.-->
+                            </div>
+                            <div class="text">
+
+                                <p>"Art must take reality by surprise." - Francoise Sagan</p>
+                                <a href="#about" class="btn"><i class="fas fa-user"></i> about me</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="container-right">
+                        <canvas id="board"></canvas>
+                        <!-- class="universe">
+                            <div class="space">
+                                <div class="sun"></div>
+                                <div class="planet">
+                                    <div class="moon"></div>
+                                </div>
+                            </div>
+                        </div-->
+                    </div>
+                </div>
+                <div class="container-home-bottom">
+                    <div class="contact-icons">
+                        <a href="mailto:lilyrchli@gmail.com"><i class='bx bxl-gmail'></i></a>
+                        <a href="https://www.artstation.com/liliyaarch7" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+                        <a href="https://github.com/Lily-Winner" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.linkedin.com/in/lilyrchli/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.facebook.com/liliya.kirichenko.5" target="_blank"><i
+                                class='bx bxl-facebook'></i></a>
+                        <!--<a href="https://twitter.com/AlyxWinner" target="_blank"><i class='bx bxl-twitter'></i></a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== ABOUT SECTION ======== -->
+    <section class="about" id="about">
+        <div class="container">
+            <h2 class="section__title">About</h2>
+            <div class="container-upper">
+                <div class="container-left">
+
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        viewBox="0 0 800 800" id="loader">
+                        <defs>
+                            <clipPath id="clipPath4">
+                                <circle class="blob" cx="350" cy="170" r="150"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                                <circle class="blob" cx="400" cy="480" r="280"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                                <circle class="blob" cx="600" cy="230" r="35"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                                <circle class="blob" cx="150" cy="620" r="105"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                                <circle class="blob" cx="650" cy="680" r="15"
+                                    transform="rotate(0) translate(0, 0) rotate(0)" />
+                            </clipPath>
+                            <filter id="goo">
+                                <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                                <feColorMatrix in="blur" mode="matrix"
+                                    values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                                <feBlend in2="goo" in="SourceGraphic" result="mix" />
+                            </filter>
+                            <pattern id="Pattern" x="0" y="0" width="0.25" height="0.25">
+                                <image xlink:href="img/noise.png"></image>
+                            </pattern>
+                        </defs>
+
+
+                        <!-- Apply the clipPath to this group -->
+                        <g class="blobs-filter">
+                            <g clip-path="url(#clipPath4)">
+                                <rect id="rect-background" width="800" height="900" />
+                                <rect fill="url(#Pattern)" width="800" height="900" />
+                                <image class="portrait2 blob" x="-2%" y="-38%" width=100% xlink:href="img/portrait.png"
+                                    transform="rotate(0) translate(0, 0) rotate(0)"></image>
+                                <image class="portrait" x="0%" y="-40%" width=100% xlink:href="img/portrait.png">
+                                </image>
+                            </g>
+                        </g>
+
+                        <image class="portrait" clip-path="url(#clipPath4)" x="0%" y="-40%" width=100%
+                            xlink:href="img/portrait.png"></image>
+                    </svg>
+
+                </div>
+                <div class="container-right">
+                    <h2>My name is <span class="main-color">Lily <i class='bx bx-wink-smile'></i></span></h2>
+                    <p>Hello! I'm <span class="main-color"></i>an artist and designer</span> with a passion for <span
+                            class="main-color"></i> technologies and development.</span>
+                    </p>
+                    <p>With a professional foundation established at an art school studio since the age of 10, 
+                        my journey in the realm of arts has been both extensive and diverse. My passion 
+                        spans across various artistic expressions, with a particular fascination for the 
+                        seamless integration of 
+                        <span class="main-color"></i> art and technology.</span> 
+                        I'm holding a bachelor's degree in 
+                        building, interior and environment design.
+                    <p>Boasting three years of experience in the field of architecture, 
+                        I have   channeling my expertise into the  realm of gaming design and game development.
+                         This transition has been marked by a profound exploration of design possibilities, 
+                         transcending physical constraints, standards, and norms. I think that the connection 
+                         of art and technology unlocks limitless potential.</p>
+                    <p>Currently,  My aspiration is to navigate the cutting edge of 
+                        <span class="main-color"></i> philosophy, art and design</span>
+                        transcending conventional boundaries. I am drawn to the intersection of 
+                         fields, where the boundless possibilities of technology harmonize with the creative potential. 
+                         My pursuit is grounded in the desire to shape spaces and experiences not only in physical
+                          space.  <span class="main-color"></i>   Let's connect <i class='bx bx-chat'></i> and explore how
+                          my skills can contribute to your project's success!</span>
+                    <p>
+                      </p>
+                    </p>
+                    <div class="center-text">
+                        <a href="Alex_CV.pdf" class="btn" download><i class='bx bxs-download'></i> Download CV</a>
+                        <a href="#contact" class="btn"><i class='bx bxs-contact'></i> Contact Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== PORTFOLIO SECTION ======== -->
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <div class="portfolio-header">
+                <h2 class="section__title">Portfolio</h2>
+                <span class="section__subtitle">this is my works</span>
+
+
+                <div class="myBtnContainer" id="myBtnContainer">
+                    <a class="btn btn-active" onclick="filterSelection('all')"> Show all</a>
+                    <a class="btn" onclick="filterSelection('project-unity')">Unity development</a>
+                    <a class="btn" onclick="filterSelection('project-ue')">Unreal Engine development</a>
+                    <a class="btn" onclick="filterSelection('project-3d')">3D Art</a>
+                    <a class="btn" onclick="filterSelection('project-2d')">2D Art</a>
+                </div>
+
+            </div>
+
+            <div class="portfolio-main">
+
+                <div class="filterDiv project-unity project-3d" id="3dRunnerModal-btn">
+                    <img src="img/portfolio/logo/Main.png" alt="" />
+                    <div class="overlay">
+                        <h3 class="project-title">3D Runner Game</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-unity project-2d" id="2DGameModal-btn">
+                    <img src="img/portfolio/logo/mivi00.png" alt="" />
+                    <div class="overlay">
+                        <h3 class="project-title">2D Survival Game</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-3d project-ue" id="3dQuestModal-btn">
+                    <img src="img/portfolio/logo/islandSys4.png" alt="">
+                    <div class="overlay">
+                        <h3 class="project-title">3D Quest Game</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-ue" id="PlatformGameModal-btn">
+                    <img src="img/portfolio/logo/Platform.png" alt="">
+                    <div class="overlay">
+                        <h3 class="project-title">Simple 3D Platform Game</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-3d" id="MortyModal-btn">
+                    <img src="img/portfolio/logo/morty copy.jpg" alt="">
+                    <div class="overlay">
+                        <h3 class="project-title">3D Character sculpting</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-3d" id="PortraitModal-btn">
+                    <img src="img/portfolio/logo/Render_FinalProgect_Liliya.jpg" alt="">
+                    <div class="overlay">
+                        <h3 class="project-title">3D Portrait character sculpting</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-3d" id="ToastyModal-btn">
+                    <img src="/img/portfolio/logo/Toasty_Bot_2 copy.png" alt="">
+                    <div class="overlay">
+                        <h3 class="project-title">3D modeling</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-3d" id="SketchModal-btn">
+                    <img src="img/portfolio/logo/sk.png" alt="">
+                    <div class="overlay">
+                        <h3 class="project-title">3D Sketch - models</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-2d" id="TommyModal-btn">
+                    <img src="img/portfolio/logo/Tommy2.jpg" alt="">
+                    <div class="overlay">
+                        <h3 class="project-title">2D Character design</h3>
+                    </div>
+                </div>
+
+                <div class="filterDiv project-2d" id="HandDrawingsModal-btn">
+                    <img src="img/portfolio/logo/drawings0.png" alt="">
+                    <div class="overlay">
+                        <h3 class="project-title">Hand drawings</h3>
+                    </div>
+                </div>
+
+                
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- ======== EXPERIENCE SECTION ======== -->
+    <section class="qualification section" id="experience">
+        <div class="container">
+            <h2 class="section__title">Experience</h2>
+            <div class="section__subtitle">My journey in the Academic and Industry</div>
+
+            <div class="qualification__tabs">
+                <div class="btn btn-active" data-target="#work">
+                    <i class="bx bx-briefcase qualification__icon"></i>
+                    <p>Professional</p>
+                </div>
+                <div class="btn" data-target="#education">
+                    <i class="bx bxs-graduation qualification__icon"></i>
+                    <p>Academic</p>
+                </div>
+            </div>
+
+            <div class="qualification__sections">
+                <div class="qualification__content" data-content id="education">
+                    <div class="qualification__data">
+                        <div class="exp_container">
+                            <div class="qualification__calendar">
+                                <i class='bx bxs-calendar'></i>
+                                2022 - NOW
+                            </div>
+                            <h3 class="qualification__title">Game Design and Development</h3>
+                            <span class="qualification__subtitle">HackerU College, Israel</span>
+                        </div>
+
+                        <div class="timeLine_container">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div class="empty-container">
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div class="empty-container"></div>
+
+                        <div class="timeLine_container before_timeline">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div class="exp_container">
+                            <div class="qualification__calendar">
+                                <i class='bx bxs-calendar'></i>
+                                2018 - 2020
+                            </div>
+                            <h3 class="qualification__title">P.Eng - Architecture and Interior Design</h3>
+                            <span class="qualification__subtitle">Shenkar College, Israel</span>
+                            <p>
+                                <span class="qualification__subtitle"><i class='bx bxs-medal'></i> Graduated with honors</span>
+                            </p>
+                        </div>
+                        <div class="timeLine_container after_timeline">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div class="exp_container">
+                            <div class="qualification__calendar">
+                                <i class='bx bxs-calendar'></i>
+                                2015 - 2019
+                            </div>
+                            <h3 class="qualification__title">B.Des - Interior, Building and Environment design</h3>
+                            <span class="qualification__subtitle">Shenkar College, Israel</span>
+                            <p>
+                                <span class="qualification__subtitle"><i class='bx bxs-medal'></i> Graduated with honors</span>
+                            </p>
+                        </div>
+
+                        <div class="timeLine_container">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div class="empty-container">
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div class="empty-container"></div>
+
+                        <div class="timeLine_container before_timeline">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div class="exp_container">
+                            <div class="qualification__calendar">
+                                <i class='bx bxs-calendar'></i>
+                                2001 - 2008
+                            </div>
+                            <h3 class="qualification__title">The School of Arts</h3>
+                            <span class="qualification__subtitle">Ukraine</span>
+                        </div>
+
+                        
+                        <div class="timeLine_container after_timeline">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="courses">
+                        <h3 class="courses-title">
+                            <i class='bx bx-book-open'></i>
+                            Courses and Workshops
+                        </h3>
+                        <div class="courses-list">
+                            <ul>
+                                <li><span class="material-symbols-outlined">done</span>
+                                    International Heritage Preservation, Documentation and Environment research workshop, 
+                                    in collaboration with the University of Politechnico de Milano. (Verona, Italy), (trainee)</li>
+                                <li><span class="material-symbols-outlined">done</span>
+                                    Training School of the COST ACTION on Digital heritage. (Slovenia)</li>
+                                <li><span class="material-symbols-outlined">done</span>
+                                    Training school of the COST ACTION on studying archeological collections in the Digital Environment. (Bosnia and Gerzegovina, Burch University)</li>
+                                
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="qualification__content qualification__active" data-content id="work">
+
+                    <div class="qualification__data">
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class='bx bxs-calendar'></i>
+                                2023 - NOW
+                            </div>
+                            <h3 class="qualification__title">Freelancer</h3>
+                            <span class="qualification__subtitle">Art, Design and Architecture works</span>
+                        </div>
+
+                        <div>
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+                    </div>
+
+                    <div class="qualification__data">
+                        <div class="empty-container">
+
+                        </div>
+
+                        <div class="timeLine_container before_timeline">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class="bx bxs-calendar"></i>
+                                2022 - 2023
+                            </div>
+                            <h3 class="qualification__title">Interior, environment and architecture designer</h3>
+                            <span class="qualification__subtitle">Klapper Architecture</span>
+                        </div>
+
+                        <div class="timeLine_container after_timeline">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="qualification__data">
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class='bx bxs-calendar'></i>
+                                2021 - 2022
+                            </div>
+                            <h3 class="qualification__title">Architecture designer and practical engeneer</h3>
+                            <span class="qualification__subtitle">Gutman Assif Architects</span>
+                        </div>
+
+                        <div class="qualification__time">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div></div>
+
+                    </div>
+
+                    <div class="qualification__data">
+                        <div class="empty-container"></div>
+
+                        <div class="timeLine_container before_timeline">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class="bx bxs-calendar"></i>
+                                2013 - 2021
+                            </div>
+                            <h3 class="qualification__title">Freelancer</h3>
+                            <span class="qualification__subtitle">Works of Art</span>
+                        </div>
+
+                        <div class="timeLine_container after_timeline">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                    </div>
+
+                    <div class="qualification__data">
+                        <div>
+                            <div class="qualification__calendar">
+                                <i class='bx bxs-calendar'></i>
+                                2011 - 2013
+                            </div>
+                            <h3 class="qualification__title">Museum curator</h3>
+                            <span class="qualification__subtitle">Ukraine</span>
+                        </div>
+
+                        <div class="qualification__time">
+                            <span class="qualification__rounder"></span>
+                            <span class="qualification__line"></span>
+                        </div>
+
+                        <div></div>
+
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== SKILLS SECTION ======== -->
+    <section class="skills" id="skills">
+        <div class="container">
+
+            <div class="section__title">
+                Skills
+            </div>
+            <div class="section__subtitle">
+                My design, technology &amp; miscellaneous skills
+            </div>
+
+            <div class="skills__container grid">
+
+                <div>
+                    <div class="skills__content   skills__close">
+                        <div class="skills__header ">
+                            <span class="material-symbols-outlined skills__icon">stadia_controller</span>
+                            <div>
+                                <h3 class="skills__title">Game Development</h3>
+                            </div>
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <ul>
+                                <li>Unity Engine</li>
+                                <li>Unreal Engine</li>
+                                <li>Pygame (Background)</li>
+                                <li>JavaScript Game Development (Basic)</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <span class="material-symbols-outlined skills__icon">deployed_code</span>
+
+                            <div>
+                                <h3 class="skills__title">3D Modeling Software</h3>
+                            </div>
+
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+
+                            <ul>
+                                <li>ZBrush</li>
+                                <li>Maya</li>
+                                <li>Blender</li>
+                                <li>Rhino3D</li>
+                                <li>Revit</li>
+                                <li>SketchUp</li>
+                                <li>AutoCAD (Working with a point cloud)</li>
+                                <li>DIALux</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <span class="material-symbols-outlined skills__icon">imagesmode</span>
+                            <div>
+                                <h3 class="skills__title">Texturing and Rendering</h3>
+                            </div>
+
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <ul>
+                                <li>Adobe Substance painter</li>
+                                <li>Marmoset Toolbag</li>
+                                <li>V-Ray for Rhino</li>
+                                <li>Arnold</li>
+                                <li>DIALux</li>
+                                
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <span class="material-symbols-outlined skills__icon">animation</span>
+                            <div>
+                                <h3 class="skills__title">Animation & Video</h3>
+                            </div>
+
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <ul>
+                                <li>Adobe After Effects</li>
+                                <li>Adobe Premiere Pro</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <i class="bx bx-wrench skills__icon"></i>
+
+                            <div>
+                                <h3 class="skills__title">Development Tools</h3>
+                            </div>
+
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <ul>
+                                <li>Git and GitHub</li>
+                                <li>Visual Studio Code and Visual Studio</li>
+                                <li>Markdown</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <span class="material-symbols-outlined skills__icon">code</span>
+
+                            <div>
+                                <h3 class="skills__title">Programming Languages</h3>
+                            </div>
+
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+
+                            <ul>
+                                <li>C#</li>
+                                <li>C++ (Background) + Node-based method</li>
+                                <li>Python (Background)</li>
+                                <li>JavaScript (Basic)</li>
+                                <li>HTML (Basic)</li>
+                                <li>CSS (Basic)</li>
+                                <li>The input language of GRASShoper (procedural imperative language)</li>
+                            </ul>
+
+                        </div>
+                    </div>
+
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <span class="material-symbols-outlined skills__icon">palette</span>
+                            <div>
+                                <h3 class="skills__title">Digital Art Software</h3>
+                            </div>
+
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+                            <ul>
+                                <li>Adobe Photoshop</li>
+                                <li>Adobe Illustrator</li>
+                                <li>Adobe InDesign</li>
+                                <li>Krita</li>
+                                <li>Inkscape</li>
+                                <li>Autodesk Sketchbook</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="skills__content skills__close">
+                        <div class="skills__header">
+                            <span class="material-symbols-outlined skills__icon">self_improvement</span>
+
+                            <div>
+                                <h3 class="skills__title">Soft Skills</h>
+                            </div>
+
+                            <i class='bx bx-chevron-down skills__arrow'></i>
+                        </div>
+
+                        <div class="skills__list grid">
+
+                            <ul>
+                                <li>Creativity</li>
+                                <li>Presentation Skills</li>
+                                <li>Problem Solving</li>
+                                <li>Critical Thinking</li>
+                                <li>Communication</li>
+                                <li>Teamwork</li>
+                                <li>Time Management</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--<section class="blog" id="blog">
+        <div class="container">
+            <div class="blog-header">
+                <div class="section__title">
+                    Blog
+                </div>
+                <div class="section__subtitle">
+                    this is my blog
+                </div>
+            </div>
+            <div class="blog-content">
+                <img src="/img/under_construction.png" id="construction">
+            </div>
+        </div>
+    </section>-->
+
+    <!-- ======== CONTACT SECTION ======== -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section__title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="left-side">
+                    <div class="address details">
+                        <i class='bx bx-map'></i>
+                        <div class="topic">Address</div>
+                        <div class="text-one">Kiryat Gat </div>
+                        <div class="text-two">Israel</div>
+                    </div>
+                    <div class="phone details">
+                        <i class='bx bxs-phone'></i>
+                        <div class="topic">Phone</div>
+                        <div class="text-one">+972546435314</div>
+                    </div>
+                    <div class="email details">
+                        <i class='bx bxs-envelope'></i>
+                        <div class="topic">Email</div>
+
+                        <div class="text-one"><a href="mailto:lilyrch.li@gmail.com">lilyrch.li@gmail.com</a></div>
+                    </div>
+                </div>
+
+                <div class="right-side">
+                    <div class="contact-icons">
+                        <a href="mailto:lilyrchli@gmail.com"><i class='bx bxl-gmail'></i></a>
+                        <a href="https://github.com/Lily-Winner" target="_blank"><i class='bx bxl-github'></i></a>
+                        <a href="https://www.artstation.com/liliyaarch7" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+                        <a href="https://www.linkedin.com/in/lilyrchli/" target="_blank"><i
+                                class='bx bxl-linkedin'></i></a>
+                        <a href="https://www.facebook.com/liliya.kirichenko.5" target="_blank"><i
+                                class='bx bxl-facebook'></i></a>
+                        <!--<a href="https://twitter.com/AlyxWinner" target="_blank"><i class='bx bxl-twitter'></i></a>-->
+                    </div>
+                    <!--<div class="topic-text">Send me a message to
+                        <a href="">volodalex90@gmail.com</a>
+                    </div>
+                    <p>If you have any projects or inquiries related to my expertise,
+                        feel free to send me a message here.
+                        I'm here to assist you and eager to collaborate</p>
+                    <form name="contact-form" target="_blank" action="https://formspree.io/f/xbjvwgwv" method="POST">
+                        <label>
+                            <div class="input-box">
+                                <input type="text" placeholder="Enter your name" />
+                            </div>
+                        </label>
+                        <label>
+                            <div class="input-box">
+                                <input type="email" name="email" placeholder="Enter your email" />
+                            </div>
+                        </label>
+                        <label>
+                            <div class="input-box message-box">
+                                <textarea name="message" placeholder="Enter your message"></textarea>
+                            </div>
+                        </label>
+                        <div class="button">
+                            <input type="submit" value="Send Now" onclick="submitForm()" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- The Runner Game Modal -->
+    <div class="modal" id="3dRunnerModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">3D Runner Game</h2>
+                <span class="close">&times;</span>
+            </div>
+            <!--<p class="p-center bold main-color-text">
+                Harmonizing Education — Where Acoustic Intelligence
+                Meets Robotic Precision for Enhanced Learning Environments.
+            </p>-->
+            <br>
+            <p class="p-center p-justify-center">
+            3D computer game, <span class="main-color"></i>Runner</span>, developed using the 
+            <span class="main-color"></i>Unity engine.</span> 
+            The game environment features low-poly objects crafted in <span class="main-color"></i>Blender</span> software.
+            </p>
+            <p class="p-center p-justify-center"> 
+            The main objective of the game is to <span class="main-color"></i>survive</span>, collide, and crush as much 
+            <span class="main-color"></i>food</span>
+            as possible to accumulate points. The player is a flying fork soaring above a 
+            long bar table. On this table are various food dishes from world cuisines; however, 
+            beware of these tempting delicacies, as colliding with them can deplete the life score.
+            As you progress through the game, the speed dynamically changes, adding an extra layer 
+            of challenge and excitement. 
+            </p>
+            <p class="p-center p-justify-center">One distinctive feature of the game is its exploration of 
+            diverse food locations inspired by countries around the world. Currently, only one location is accessible.
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://youtu.be/rbXp76WhN9c"
+                    target="_blank" title="Youtube"><i class='bx bxl-youtube'></i></a>
+                <a href="https://lilyk14.itch.io/cuisine-smasher" target="_blank" title="Itch-io"><i class='bx bxs-joystick'></i></a> 
+                <a href="https://github.com/Lily-Winner/3D-Runner/tree/design" target="_blank" title="Github"><i
+                        class='bx bxl-github'></i></a>
+            </div>
+            <img src="img/portfolio/logo/food.png" alt="">
+            <img src="img/portfolio/logo/food2.png" alt="">
+        </div>
+    </div>
+
+    <!-- The Microvival Modal -->
+    <div class="modal" id="2DGameModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">2D Survval Game</h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                A 2D computer, casual game named <span class="main-color"></i>'Microvival'</span> is  project centered around bacteria and... colors. 
+                The game developed in <span class="main-color"></i>Unity engine.</span> Sprites combined with 
+                <span class="main-color"></i>hand drawings.</span> 
+                Using minimalism in the color of environment and UI design to highlight <span class="main-color"></i>the main theme - Color! :). </span> 
+            <p class="p-center p-justify-center">
+                The protagonist is a bacterium, and the objective is to score as many points as possible 
+                by consuming other bacteria. However, the unique twist lies in maintaining an equilibrium of color percentages.
+            <p class="p-center p-justify-center">
+                At the game's onset, the player starts with a gray color, representing fifty percent of the three primary colors 
+                <span class="main-color"></i>(RGB).</span>
+                As the player devours other bacteria during the game, he absorb color percentages from their prey, altering  own hue. 
+                To add an extra layer of complexity, if the player refrains from consuming colored bacteria for a certain duration, 
+                his color starts to change independently. This dynamic feature not only shortens the gameplay but also compels the player to remain attentive.
+            <p class="p-center p-justify-center">
+                <span class="main-color"></i>Survival</span> in 'Microvival' hinges on skillfully managing color balance and avoiding the black color, which marks the end of the game.
+                The development process of the game revolves around the manipulation of RGB colors, intricate dependencies, 
+                and the dynamic alteration of colors based on the player's choices. 
+            <p class="p-center p-justify-center">
+                Beyond the gaming experience, 'Microvival' serves as an educational tool, fostering an intuitive understanding of colors.
+                It challenges players to feel and comprehend colors on an instinctive level while providing an entertaining way to pass the time.
+
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://youtu.be/V90I3SxWUeU" target="_blank" title="Youtube"><i
+                        class='bx bxl-youtube'></i></a>
+
+                <a href="https://lilyk14.itch.io/microvival" target="_blank" title="Itch-io"><i class='bx bxs-joystick'></i></a>
+            </div>
+            <img src="img/portfolio/logo/Screenshot 2024-01-03 at 12.22.33.png" alt="">
+            <img src="img/portfolio/logo/menu.png" alt="">
+        </div>
+    </div>
+
+   
+
+    <!-- Tweet Binary Classifacation Modal -->
+    <div class="modal" id="3dQuestModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">"Island System" Game</h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                3D Third person, <span class="main-color"></i>quest and jorney</span> game.
+                <span class="main-color"></i>"Island System"</span> is an exploration and resource management game set in 
+                a world of interconnected islands.
+                The game has SFX sounds, weather changes and tooltips. <span class="main-color"></i>The entire game design: </span>
+                environment, assets, textures and animations, were created in <span class="main-color"></i>Unreal Engine,</span> 
+                using the tols that are in the engine itself.
+            <p class="p-center p-justify-center">
+                Player start on a starting island and must navigate through different environments, 
+                solve mysteries, and collect resources to progress to the final island. The game 
+                incorporates elements of platforming:  player construct platforms using collected 
+                resources to overcome obstacles and reach new areas. Each island offers unique challenges and resources to uncover.
+            <p class="p-center p-justify-center">
+                <span class="main-color"></i>Island Exploration:</span> 
+                Player navigate through a series of islands, each with its 
+                own distinct environment, terrain, and resources. The islands are interconnected, 
+                and player must find the path to the next island.
+            <p class="p-center p-justify-center">
+                <span class="main-color"></i>Resource Collection:</span>  Player collect various resources scattered throughout the islands.
+                Resources are essential for crafting platforms and unlocking new areas. 
+                Each resource board has its own properties and characteristics.
+            <p class="p-center p-justify-center">
+                <span class="main-color"></i>Crafting and Platforming:</span> Player use the collected resources to craft platforms and build bridges, 
+                allowing them to traverse gaps, reach higher platforms, and overcome obstacles. 
+                trategically Crafting platforms  is important as resources may be limited.
+                Mystery Solving: Each island presents mysteries and challenges for player to solve.
+            <p class="p-center p-justify-center">
+                <span class="main-color"></i>Randomized Resource Placement:</span>
+                Resources, trees, and other environmental elements appear in random locations within the islands. 
+                This ensures that each playthrough offers a fresh experience, requiring player to explore different 
+                areas and adapt their strategies. The trees environment is randomized according to the material of the earth, and it’s location.
+            <p class="p-center p-justify-center">
+                <span class="main-color"></i>The ultimate goal:</span>
+                To reach the final island by successfully navigating through all the islands, solving mysteries, a
+                nd collecting sufficient resources to construct platforms and bridges.
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://youtu.be/ho17Z5iJFf8" target="_blank" title="Youtube"><i
+                    class='bx bxl-youtube'></i></a>
+            </div>
+            <img src="img/portfolio/logo/first.png" alt="">
+            <img src="img/portfolio/logo/1.png" alt="">
+            <img src="img/portfolio/logo/2.png" alt="">
+            <img src="img/portfolio/logo/3.png" alt="">
+            <img src="img/portfolio/logo/4.png" alt="">
+            <img src="img/portfolio/logo/5.png" alt="">
+            <img src="img/portfolio/logo/6.png" alt="">
+        </div>
+    </div>
+
+    <!-- Platform Game Modal -->
+    <div class="modal" id="PlatformGameModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">A simple 3D Platformer</h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                3D platform game. This is a <span class="main-color"></i>simple game layout</span> developed in <span class="main-color"></i>Unreal Engine.</span> 
+                It's standard platformer format: advance through the stages, collect objects, 
+                navigate platforms, and avoid falling :). The game includes various types of 
+                objects such as dynamic, static, and interactive elements. <span class="main-color"></i>Simple shapes and 
+                materials</span>  were employed. The project emphasizes working with <span class="main-color"></i>simple blueprints</span> 
+                and strives to create an environment and experience using uncomplicated shapes and materials
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://youtu.be/uN6BzDnL0Jk" target="_blank" title="Youtube"><i
+                    class='bx bxl-youtube'></i></a>
+            </div>
+            <img src="img/portfolio/logo/platform.png" alt="">
+        </div>
+    </div>
+
+     <!-- Morty Modal -->
+     <div class="modal" id="MortyModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">3D character sculpture</h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                <span class="main-color"></i>3D sculpture</span> of the character "Morty" from the cartoon series "Rick and Morty." 
+                Sculpting is done in <span class="main-color"></i>ZBrush</span> software. The initial stage of the work involved using 
+                the blocks method to establish the shape and general volumes of the sculpture. 
+                Following this, color and details were added, and rendering was accomplished using the 
+                <span class="main-color"></i>Arnold plugin in Maya</span>
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://www.artstation.com/artwork/LRdk35" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+            </div>
+            <img src="img/portfolio/logo/morty copy.jpg" alt="">
+            <img src="img/portfolio/logo/morty0.jpg" alt="">
+            <img src="img/portfolio/logo/MortyProces.jpg" alt="">
+        </div>
+    </div>
+
+    
+
+    <!-- SPortrait sculpture Modal -->
+    <div class="modal" id="PortraitModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">3D Portrait character sculpture</h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                3D sculpture of the character portrait <span class="main-color"></i>"Mister W"</span> from drawing reference. 
+                Sculpting is done in <span class="main-color"></i>ZBrush</span> software. The initial stage of the work involved 
+                using the blocks method to establish the shape and general volumes of the character. 
+                Following this, color, textures and details were added, and rendering was accomplished 
+                using the <span class="main-color"></i>Arnold plugin in Maya</span>
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://www.artstation.com/artwork/VJXDn5" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+            </div>
+            <img src="img/portfolio/logo/Render_FinalProgect_Liliya.jpg" alt="">
+            <img src="img/portfolio/logo/Process_FinalProj2.jpg" alt="">
+        </div>
+    </div>
+    
+    <!-- 3d Toasty Modal -->
+    <div class="modal" id="ToastyModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">3D character model</h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                A 3D character model named <span class="main-color"></i>Toasty Bot</span>, inspired by a artwork by Matt Dixon. 
+                The foundation of the project lies in shaping and volumes, crafted using <span class="main-color"></i>Maya</span> 
+                software. Subsequently, details were added through sculpting in <span class="main-color"></i>ZBrush</span>software.
+                Retopology was performed back in Maya. Following this, baking and lighting 
+                processes took place in <span class="main-color"></i>Marmoset Toolbag</span>, and texturing was completed using 
+                <span class="main-color"></i>Substance painter.</span> 
+                Finally, the rendering was conducted through Marmoset Toolbag 
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://www.artstation.com/artwork/6N58ON" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+            </div>
+            <img src="img/portfolio/logo/Toasty_Bot_2.png" alt="">
+            <img src="img/portfolio/logo/robo_renders.jpg" alt="">
+            <img src="img/portfolio/logo/robo_zbrush.jpg" alt="">
+            <img src="img/portfolio/logo/robo_faces.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Sketch Modal -->
+    <div class="modal" id="SketchModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">3D Sketches </h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                Some of the models and sculptures that were made as quick works and ideas.
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://www.artstation.com/liliyaarch7" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+            </div>
+            <img src="img/portfolio/logo/sk1.png" alt="">
+        </div>
+    </div>
+
+    <!-- Tommy Modal -->
+    <div class="modal" id="TommyModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">Concept Art</h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                Initial concept <span class="main-color"></i>character design</span> created as a hand-drawing within <span class="main-color"></i>Krita</span> software. 
+                <span class="main-color"></i>Tommy</span> is a humorous character conceived as the main protagonist for a fun computer game with elements of survival and adventure.
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://www.artstation.com/artwork/WBDlZQ" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+            </div>
+            <img src="img/portfolio/logo/Tommy.jpg" alt="">
+        </div>
+    </div>
+
+    <!-- Hand drawings Modal -->
+    <div class="modal" id="HandDrawingsModal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-head">
+                <h2 class="modal-title">Hand drawings</h2>
+                <span class="close">&times;</span>
+            </div>
+            <p class="p-center p-justify-center">
+                Part of collection of hand drawings and sketches 
+                completed during design and architecture projects. 
+                These works form part of research related to philosophy and 
+                the exploration of spatial experiences. The materials employed 
+                in creating these pieces include pencils, pens, paints, markers, and paper.
+            </p>
+            <br>
+            <p class="p-center2 bold">More:</p>
+            <br>
+            <div class="project-links">
+                <a href="https://www.artstation.com/liliyaarch7" target="_blank"><i class="fa-brands fa-artstation"></i></a>
+            </div>
+            <img src="img/portfolio/logo/drawings.png" alt="">
+            <img src="img/portfolio/logo/paint.jpg" alt="">
+        </div>
+    </div>
+
+
+    <a href="#home" class="scrollup" id="scroll-top">
+        <i class='bx bx-arrow-to-top scrollup__icon'></i>
+    </a>
+
+    <!-- import -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/navigation_script.js"></script>
+
+    <!-- Animations -->
+    <!--<script type="text/javascript" src="js/solar_animation.js"></script>-->
+    <script type="text/javascript" src="js/typing_animation.js"></script>
+    <script type="text/javascript" src="js/blob.js"></script>
+</body>
+
+</html>

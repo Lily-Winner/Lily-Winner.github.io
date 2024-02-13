@@ -1,0 +1,22 @@
+/*body {
+  font-family:'Courier New', Courier, monospace;
+  text-align: center;
+}*/
+
+  @import url('https://fonts.googleapis.com/css2?family=DotGothic16&display=swap');
+
+
+#board {
+  /*padding-top: 50px;*/
+  font-family:'Courier New', Courier, monospace;
+  padding-top: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #67646400;
+}
+
+@media (max-width: 992px) {
+  #board {
+    display: none;
+  }
+}
